@@ -1,0 +1,16 @@
+PODS:
+  - LWBNetwork (0.1.0)
+
+DEPENDENCIES:
+  - LWBNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  LWBNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LWBNetwork: 2bd74786dead3c4e989f7aa7578a233ed14820df
+
+PODFILE CHECKSUM: 5b9576a6f085aede8f6356c77375da1729e37f99
+
+COCOAPODS: 1.11.3

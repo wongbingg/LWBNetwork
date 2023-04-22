@@ -1,0 +1,6 @@
+framework module LWBNetwork {
+  umbrella header "LWBNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}
