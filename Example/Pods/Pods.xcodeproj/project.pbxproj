@@ -12,7 +12,7 @@
 		0FB799DCB34317251A5CFE23954CD84E /* Pods-LWBNetwork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE1A7166DCD9D3BBB527EF848A9FE58 /* Pods-LWBNetwork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11F77502DC58CBF45686C743D00B4112 /* Pods-LWBNetwork_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C04A6E5DDE2D022B526E86C8E7BD8 /* Pods-LWBNetwork_Tests-dummy.m */; };
 		5ACCB1013E2771CD743047679BE0BE19 /* Pods-LWBNetwork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF13E970D9DE36678FA0F9E783B119F8 /* Pods-LWBNetwork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		815C052A6E19D5790F506553C2E00586 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8130DC2EDC82424D331AF768287C3CC /* ReplaceMe.swift */; };
+		815C052A6E19D5790F506553C2E00586 /* LWBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8130DC2EDC82424D331AF768287C3CC /* LWBNetwork.swift */; };
 		837017CAB64E247711A5156800C50B45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9E1339F11E84CEA982C0183C42889559 /* LWBNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E978064516664EE5FDD96B6B0CDA6B6 /* LWBNetwork-dummy.m */; };
 		C02F0CD8D2291AADBB8C77AEF53E73F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -42,11 +42,11 @@
 		0ECD82D60D128A84B030A6216E66AA93 /* Pods-LWBNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWBNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		14536B231B9EEA764C40CB379035BFBA /* Pods-LWBNetwork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWBNetwork_Example-frameworks.sh"; sourceTree = "<group>"; };
 		17714C1FECC25580997C22E9FDBE81AB /* Pods-LWBNetwork_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LWBNetwork_Example.modulemap"; sourceTree = "<group>"; };
-		1CB4B18945923B4CF3ABBA3EF169E666 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1CB4B18945923B4CF3ABBA3EF169E666 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22BE746380E5B13569BB993F54D174E0 /* Pods-LWBNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWBNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		241AE37109CE5E531E8F93890DB7CE18 /* LWBNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWBNetwork.debug.xcconfig; sourceTree = "<group>"; };
 		3DFBA13AF59004BE7255FD8E40BFB7D4 /* LWBNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWBNetwork.release.xcconfig; sourceTree = "<group>"; };
-		44EE86C11C3CFAA4A5A881B222FB28A7 /* LWBNetwork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LWBNetwork; path = LWBNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EE86C11C3CFAA4A5A881B222FB28A7 /* LWBNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LWBNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EB495266BCF1D6B0F2462AFC38F23F /* Pods-LWBNetwork_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LWBNetwork_Tests.modulemap"; sourceTree = "<group>"; };
 		46FF2DFB6C40FC5B238B799CB3529CA2 /* LWBNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWBNetwork-prefix.pch"; sourceTree = "<group>"; };
 		56ADDD359D21F46A3F7339C9F5889A67 /* LWBNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LWBNetwork-Info.plist"; sourceTree = "<group>"; };
@@ -54,21 +54,21 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		868A1E1BC15532746BE2BA744972B58F /* Pods-LWBNetwork_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LWBNetwork_Example-dummy.m"; sourceTree = "<group>"; };
 		8E978064516664EE5FDD96B6B0CDA6B6 /* LWBNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LWBNetwork-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FAFC03F5CFE1644D88183ABA5F3E20E /* Pods-LWBNetwork_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWBNetwork_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A75D56C8E54346A6E1A341816322B050 /* LWBNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LWBNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B23FD5FE164DF448A6EACD8E048B7D9F /* Pods-LWBNetwork_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LWBNetwork_Tests"; path = Pods_LWBNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75D56C8E54346A6E1A341816322B050 /* LWBNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LWBNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B23FD5FE164DF448A6EACD8E048B7D9F /* Pods_LWBNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWBNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CFA0DE3AC1EA6292A603ABB8B634B5 /* Pods-LWBNetwork_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWBNetwork_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B65A0EEBB4D2841CB784AB19D0D61631 /* LWBNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWBNetwork-umbrella.h"; sourceTree = "<group>"; };
 		B9B7D8EF1077801F516F06C2DC4F902D /* LWBNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LWBNetwork.modulemap; sourceTree = "<group>"; };
 		CB808BBD25868F77E9B378EE8C0C2FEC /* Pods-LWBNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWBNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1A7166DCD9D3BBB527EF848A9FE58 /* Pods-LWBNetwork_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LWBNetwork_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DFE1010B04F03D279E6D31263F3320E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DFE1010B04F03D279E6D31263F3320E4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E9E5C50C7311EC9F004D4BB79704F709 /* Pods-LWBNetwork_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWBNetwork_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F45C607DB1461A244E9C24EB5AC7CC4E /* Pods-LWBNetwork_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWBNetwork_Tests-Info.plist"; sourceTree = "<group>"; };
 		F75AA8E0AE52DD008D15448627729767 /* Pods-LWBNetwork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWBNetwork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8130DC2EDC82424D331AF768287C3CC /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LWBNetwork/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		F910F92BB5E6124291D84B5D39F74F2D /* Pods-LWBNetwork_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LWBNetwork_Example"; path = Pods_LWBNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8130DC2EDC82424D331AF768287C3CC /* LWBNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LWBNetwork.swift; path = LWBNetwork/Classes/LWBNetwork.swift; sourceTree = "<group>"; };
+		F910F92BB5E6124291D84B5D39F74F2D /* Pods_LWBNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWBNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF13E970D9DE36678FA0F9E783B119F8 /* Pods-LWBNetwork_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LWBNetwork_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,9 +128,9 @@
 		94029DBBC7E0BE9D4408EDD8C54E5526 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44EE86C11C3CFAA4A5A881B222FB28A7 /* LWBNetwork */,
-				F910F92BB5E6124291D84B5D39F74F2D /* Pods-LWBNetwork_Example */,
-				B23FD5FE164DF448A6EACD8E048B7D9F /* Pods-LWBNetwork_Tests */,
+				44EE86C11C3CFAA4A5A881B222FB28A7 /* LWBNetwork.framework */,
+				F910F92BB5E6124291D84B5D39F74F2D /* Pods_LWBNetwork_Example.framework */,
+				B23FD5FE164DF448A6EACD8E048B7D9F /* Pods_LWBNetwork_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 		F1B2589E8C204FFA910E64F3FCFC720C /* LWBNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				F8130DC2EDC82424D331AF768287C3CC /* ReplaceMe.swift */,
+				F8130DC2EDC82424D331AF768287C3CC /* LWBNetwork.swift */,
 				A322E6571EC43D331497FB0BE7FF50D2 /* Pod */,
 				9AA7A4F6235527C2023DE5837494A740 /* Support Files */,
 			);
@@ -268,7 +268,7 @@
 			);
 			name = LWBNetwork;
 			productName = LWBNetwork;
-			productReference = 44EE86C11C3CFAA4A5A881B222FB28A7 /* LWBNetwork */;
+			productReference = 44EE86C11C3CFAA4A5A881B222FB28A7 /* LWBNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B303E8CC5D5F7687475BEA8CFE87425E /* Pods-LWBNetwork_Example */ = {
@@ -287,7 +287,7 @@
 			);
 			name = "Pods-LWBNetwork_Example";
 			productName = Pods_LWBNetwork_Example;
-			productReference = F910F92BB5E6124291D84B5D39F74F2D /* Pods-LWBNetwork_Example */;
+			productReference = F910F92BB5E6124291D84B5D39F74F2D /* Pods_LWBNetwork_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BE2CC7257C9E68098FCCCE8450DAD8CE /* Pods-LWBNetwork_Tests */ = {
@@ -306,7 +306,7 @@
 			);
 			name = "Pods-LWBNetwork_Tests";
 			productName = Pods_LWBNetwork_Tests;
-			productReference = B23FD5FE164DF448A6EACD8E048B7D9F /* Pods-LWBNetwork_Tests */;
+			productReference = B23FD5FE164DF448A6EACD8E048B7D9F /* Pods_LWBNetwork_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E1339F11E84CEA982C0183C42889559 /* LWBNetwork-dummy.m in Sources */,
-				815C052A6E19D5790F506553C2E00586 /* ReplaceMe.swift in Sources */,
+				815C052A6E19D5790F506553C2E00586 /* LWBNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,13 +456,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -484,7 +483,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LWBNetwork/LWBNetwork-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LWBNetwork/LWBNetwork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LWBNetwork/LWBNetwork.modulemap";
 				PRODUCT_MODULE_NAME = LWBNetwork;
@@ -515,7 +514,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LWBNetwork_Example/Pods-LWBNetwork_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LWBNetwork_Example/Pods-LWBNetwork_Example.modulemap";
@@ -548,7 +547,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LWBNetwork_Tests/Pods-LWBNetwork_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LWBNetwork_Tests/Pods-LWBNetwork_Tests.modulemap";
@@ -618,7 +617,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -647,7 +646,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LWBNetwork_Tests/Pods-LWBNetwork_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LWBNetwork_Tests/Pods-LWBNetwork_Tests.modulemap";
@@ -681,7 +680,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LWBNetwork/LWBNetwork-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LWBNetwork/LWBNetwork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LWBNetwork/LWBNetwork.modulemap";
 				PRODUCT_MODULE_NAME = LWBNetwork;
@@ -713,7 +712,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LWBNetwork_Example/Pods-LWBNetwork_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LWBNetwork_Example/Pods-LWBNetwork_Example.modulemap";
