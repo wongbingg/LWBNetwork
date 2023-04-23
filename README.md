@@ -2,6 +2,7 @@
 
 [![CI Status](https://img.shields.io/travis/wongbingg/LWBNetwork.svg?style=flat)](https://travis-ci.org/wongbingg/LWBNetwork)
 [![Version](https://img.shields.io/cocoapods/v/LWBNetwork.svg?style=flat)](https://cocoapods.org/pods/LWBNetwork)
+[![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
 [![License](https://img.shields.io/cocoapods/l/LWBNetwork.svg?style=flat)](https://cocoapods.org/pods/LWBNetwork)
 [![Platform](https://img.shields.io/cocoapods/p/LWBNetwork.svg?style=flat)](https://cocoapods.org/pods/LWBNetwork)
 
