@@ -5,6 +5,8 @@
 //  Created by 이원빈 on 2023/04/23.
 //
 
+import Foundation
+
 public struct APIClient {
     public static let shared = APIClient(session: URLSession.shared)
     private let session: URLSessionProtocol
