@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let chuckNorrisApi = ChuckNorrisAPI()
+        
+        // MARK: Async-await Version
         Task {
             do {
                 let response = try await chuckNorrisApi.execute()
@@ -29,6 +31,24 @@ class ViewController: UIViewController {
                 resultLabel.textColor = .systemRed
             }
         }
+        
+        // MARK: Escaping closure Version
+//        chuckNorrisApi.execute { [self] result in
+//            switch result {
+//            case .success(let response):
+//                DispatchQueue.main.async { [self] in
+//                    myLabel.text = response.value
+//                    resultLabel.text = "Networking Success!"
+//                    resultLabel.textColor = .systemGreen
+//                }
+//            case .failure(let error):
+//                DispatchQueue.main.async { [self] in
+//                    myLabel.text = error.localizedDescription
+//                    resultLabel.text = "Networking Fail"
+//                    resultLabel.textColor = .systemRed
+//                }
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {

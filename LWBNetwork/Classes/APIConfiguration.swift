@@ -32,6 +32,7 @@ public struct APIConfiguration {
         let url = try makeURL(base: baseURL, path: path, parameters: parameters)
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
+        
         guard let headerField = headerField else { return urlRequest }
         
         for (index, value) in headerField {
@@ -85,6 +86,7 @@ enum APIConfigurationError: LocalizedError {
 
 public enum HTTPMethod: String {
     case get = "GET"
+    case put = "PUT"
     case post = "POST"
     case patch = "PATCH"
     case delete = "DELETE"
